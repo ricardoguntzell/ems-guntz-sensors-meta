@@ -1,0 +1,9 @@
+[submodule "microservices/temperature-monitoring"]
+	path = microservices/temperature-monitoring
+	url = https://github.com/ricardoguntzell/ems-guntz-sensors-temperature-monitoring.git
+[submodule "microservices/temperature-processing"]
+	path = microservices/temperature-processing
+	url = https://github.com/ricardoguntzell/ems-guntz-sensors-temperature-processing.git
+[submodule "microservices/device-management"]
+	path = microservices/device-management
+	url = https://github.com/ricardoguntzell/ems-guntz-sensors-device-management.git

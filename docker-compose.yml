@@ -1,0 +1,15 @@
+version: "3.7"
+services:
+  guntz-sensors-rabbitmq:
+    image: rabbitmq:3-management
+    restart: "no"
+    ports:
+      - 5672:5672
+      - 15672:15672
+    environment:
+      RABBITMQ_DEFAULT_USER: ${RABBITMQ_DEFAUL_USER}
+      RABBITMQ_DEFAULT_PASS: ${RABBITMQ_DEFAUL_USER}
+    volumes:
+      - guntz-sensors-rabbitmq:/var/lib/rabbitmq/
+volumes:
+  guntz-sensors-rabbitmq:

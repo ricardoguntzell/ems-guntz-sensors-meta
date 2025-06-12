@@ -7,9 +7,10 @@ services:
       - 5672:5672
       - 15672:15672
     environment:
-      RABBITMQ_DEFAULT_USER: ${RABBITMQ_DEFAUL_USER}
-      RABBITMQ_DEFAULT_PASS: ${RABBITMQ_DEFAUL_USER}
+      RABBITMQ_DEFAULT_USER: ${RABBITMQ_DEFAULT_USER}
+      RABBITMQ_DEFAULT_PASS: ${RABBITMQ_DEFAULT_USER}
     volumes:
       - guntz-sensors-rabbitmq:/var/lib/rabbitmq/
+      - ./configs/rabbitmq/enabled_plugins:/etc/rabbitmq/enabled_plugins
 volumes:
   guntz-sensors-rabbitmq:
